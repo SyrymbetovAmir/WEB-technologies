@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Webpage</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Quicksand:wght@300..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&family=Playwrite+CU:wght@100..400&family=Quicksand:wght@300..700&display=swap');
+        body {
+            font-family: "Quicksand", sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, rgb(4, 8, 30), rgb(39, 43, 52));
+            color: rgb(221, 221, 221);
+        }
+        h2 {
+            color: #F5C681;
+            text-align: center;
+        }
+        /* Header */
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        .submenu {
+            color: white;
+            display: flex; 
+            justify-content: center;
+            width: 8vw; 
+        }
+        .active {
+            height: 30px;
+            border-bottom: 3px solid #F5C681;
+            color: #F5C681;
+        }
+
+        .texts {
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            text-align: center;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            padding: 0;
+            font-size: 20px;
+            
+        }
+        .nav {
+            display: flex;
+            width: 40vw;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .header {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            height: 150px;
+            border-bottom: 1px solid black;
+            background-color: #252933;
+        }
+        .logo {
+            display: flex;
+            margin-left: 30px;
+            height: 75px;
+            width: 150px;
+        }
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 95%;
+        }
+        /* Main */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 100vh;
+        }
+        .box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 60%;
+        }
+        .box p {
+            font-size: 20px;
+            width: 400px;
+        }
+        /* Footer */
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20vh;
+            background-color: #252933;
+            margin-top: 50px;
+        }
+        .footer p {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <img class="logo" src="https://thb.tildacdn.pro/tild6630-3836-4962-b731-343565646136/-/resize/504x/aitu-logo_white.png" alt="">
+            <nav class="nav">
+                <ul class="menu">
+                    <div class="shadow">
+                        <a class="submenu" href="home.html">
+                            <li class="texts">Home</li>
+                        </a>
+                    </div>
+                    <div class="shadow">
+                        <a class="submenu" href="hobbies.html">
+                            <li class="texts active">Hobbies</li>
+                        </a>
+                    </div>
+                    <div class="shadow">
+                        <a class="submenu" id="cm" href="contactme.html">
+                            <li class="texts">Contact me</li>
+                        </a>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <h2>Hobbies</h2>
+        <div class="container">
+            <div class="box">
+               <img width="400px" src="https://theironoffice.com/cdn/shop/files/Gym_12.23-19.jpg?v=1701994187&width=3840" alt="">
+                <p>One of my favorite hobbies is going to the gym. It’s more than just a workout for me—it’s a way to challenge myself physically and mentally. Whether I’m lifting weights or trying out new routines, the gym helps me stay focused and energized. It’s my go-to place for staying fit, relieving stress, and pushing my limits every day.</p>
+            </div>
+            <div class="box">
+                <p>My second hobby is all about my car, a Volkswagen Polo. I take great pride in keeping it in top condition, from regular maintenance to detailing. Whether it’s fine-tuning the engine or ensuring the interior stays pristine, I enjoy every aspect of car care. It’s a rewarding hobby that lets me appreciate both the engineering and the aesthetics of my Polo.</p>
+                <img width="400px"src="img/polo.png" alt="">
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>@2024. All rights reserved</p>
+    </footer>
+</body>
+</html>
