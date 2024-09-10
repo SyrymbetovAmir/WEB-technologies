@@ -19,6 +19,10 @@ a {
     display: flex; 
     justify-content: center;
     width: 8vw; 
+    transition: all 0.5ms ease-in-out;
+}
+.submenu:hover {
+    color:#F5C681;
 }
 .active {
     height: 30px;

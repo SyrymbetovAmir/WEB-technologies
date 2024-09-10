@@ -17,6 +17,7 @@
         h2 {
             color: #F5C681;
             text-align: center;
+            font-size: 30px;
         }
         /* Header */
         a {
@@ -28,6 +29,10 @@
             display: flex; 
             justify-content: center;
             width: 8vw; 
+            transition: all 0.5ms ease-in-out;
+        }
+        .submenu:hover {
+            color:#F5C681;
         }
         .active {
             height: 30px;
@@ -94,6 +99,15 @@
             font-size: 20px;
             width: 400px;
         }
+        .video {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .video h2 {
+            margin-bottom: 50px;
+        }
         /* Footer */
         footer {
             display: flex;
@@ -144,6 +158,10 @@
                 <p>My second hobby is all about my car, a Volkswagen Polo. I take great pride in keeping it in top condition, from regular maintenance to detailing. Whether it’s fine-tuning the engine or ensuring the interior stays pristine, I enjoy every aspect of car care. It’s a rewarding hobby that lets me appreciate both the engineering and the aesthetics of my Polo.</p>
                 <img width="400px"src="img/polo.png" alt="">
             </div>
+        </div>
+        <div class="video">
+            <h2>Just if you want to know about car :)</h2>
+            <iframe width="1000" height="600" src="https://www.youtube.com/embed/JfD030vmlh0" title="Обзор VW Polo Liftback 2022. Лучик надежности в эпоху одноразовых китайцев." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </main>
     <footer class="footer">
