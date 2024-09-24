@@ -39,7 +39,7 @@ a {
 .menu {
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    width: 40%;
     padding: 0;
     font-size: 20px;
     
@@ -73,12 +73,15 @@ a {
 }
 /* Main */
 .main {
-    margin-top: 50px
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 .aboutme {
     display: flex;
     justify-content: space-around;
+    width: 80%;
 }
 h1 {
     font-family: "Martian Mono", monospace;
@@ -88,7 +91,7 @@ h1 {
     font-size: 3rem;
     width: 50%;
 }
-h2 {
+.h2 {
     color: #F5C681;
     font-weight: 100;
     margin: 0;
@@ -119,14 +122,21 @@ h2 {
     color: #383c53;
 }
 .cont {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 .ab-wrapper {
+    height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 90%;
 }
-.btn {
+.btn_ {
     background-color: rgba(1,1,1,0);
     border: 1px solid #F5C681;
     width: 120px;
@@ -134,7 +144,7 @@ h2 {
     color: #F5C681;
     cursor: pointer;
 }
-.btn:hover {
+.btn_:hover {
     background-color: #F5C681;
     color: white;
 }
@@ -142,11 +152,12 @@ h2 {
 .projects {
     display: flex;
     flex-direction: column;
-    height: 70vh;
+    height: 60vh;
 }
 .projects h2 {
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    color: #F5C681;
 }
 .projects-img {
     display: flex;
@@ -159,6 +170,83 @@ h2 {
 .projects-img img:hover{
     transform: scale(1.4);
 }
+/* Hobbies */
+.container-hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+.box p {
+    font-size: 20px;
+    width: 400px;
+}
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.video h2 {
+    margin-bottom: 50px;
+}
+.hobbies h2{
+    text-align: center;
+    font-size: 30px;
+    color: #F5C681;
+}
+.hobbies p{
+    color: rgb(221, 221, 221);
+}
+.btn_cm {
+    background-color: rgba(1,1,1,0);
+    border: 1px solid #F5C681;
+    width: 10vw;
+    height: 5vh;
+    color: #F5C681;
+    cursor: pointer;
+}
+.btn_cm:hover {
+    background-color: #F5C681;
+    color: white;
+}
+/* Contact me */
+.contact_me {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-between; 
+    margin-top: 50px; 
+    height: 60vh; 
+    margin-bottom: 50px;
+}
+.cards {
+    margin-top: 50px;
+    display: flex; 
+    justify-content: space-between; 
+    width: 70%; 
+    height: 100%;
+}
+.wrapper_cm {
+    width: 20vw; 
+    height: 50vh;
+    border: 2px solid white; 
+}
+.container_cm {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-between;
+    height: 80%;
+}
+
 /* Footer */
 footer {
     display: flex;
