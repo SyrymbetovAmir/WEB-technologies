@@ -247,6 +247,19 @@ h1 {
     height: 80%;
 }
 
+/* JS tasks */
+
+.JSprojects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.JSwrapper {
+    width: 80%;
+}
+
+
 /* Footer */
 footer {
     display: flex;

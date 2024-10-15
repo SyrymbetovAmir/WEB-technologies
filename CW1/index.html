@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="display: flex; align-items: center;">
+        <p>1st Number: </p>
+        <input id="frst" type="text" style="height: 20px;">
+    </div>
+    <div style="display: flex; align-items: center;">
+        <p>2st Number: </p>
+        <input id="scnd" type="text" style="height: 20px;">
+    </div>
+    <div style="display: flex; justify-content: space-between; width: 20%;">
+        <input id="mult" type="button" value="Multiply" onclick="multiply()">
+        <input id="div" type="button" value="Divide" onclick="divide()">
+    </div>
+    <p>The Result Is:</p>
+    <p id="result"></p>
+
+    <!-- CONVERTER -->
+
+    <h2>Online converter from Celsius to Fahrenheit</h2>
+    <div style="display: flex; align-items: center;">
+        <p>Write Celsius </p>
+        <input id="cels" type="text" style="height: 20px;">
+    </div>
+    <div style="display: flex; align-items: center;">
+        <p>The Result Is: </p>
+        <p id="result2"></p>
+    </div>
+    <input type="button" value="Convert" onclick="converter()">
+
+    <input style="display: block; margin-top: 50px;" type="button" value="Even or Odd" onclick="eod()">
+
+    <input style="display: block; margin-top: 50px;" type="button" value="Min Max" onclick="lol()">
+
+    <div style="display: flex; align-items: center;">
+        <p>Write a side </p>
+        <input id="a" type="text" style="height: 20px;">
+    </div>
+    <div style="display: flex; align-items: center;">
+        <p>Write b side </p>
+        <input id="b" type="text" style="height: 20px;">
+    </div>
+    <div style="display: flex; align-items: center;">
+        <p>Write c side </p>
+        <input id="c" type="text" style="height: 20px;">
+    </div>
+    <input type="button" value="Calculate" onclick="aot()">
+    <div style="display: flex; align-items: center;">
+        <p>The Result Is: </p>
+        <p id="result3"></p>
+    </div>
+
+    <input style="display: block; margin-top: 50px;" type="button" value="Factorial" onclick="factorial()">
+
+    <script src="index.js"></script>
+</body>
+</html>

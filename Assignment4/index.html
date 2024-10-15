@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4: JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="JSprojects">
+        <h2 class="h2" style="text-align: center;">My JS tasks</h2>
+        <div class="JSwrapper" id="JSwrapper">
+            <div class="btnstask">
+                <h3>Task 1: Functions</h3>
+                <div class="text" id="textbox">
+                    <p class="btntext" id="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, eum harum ipsum esse voluptatem non! Inventore, eos repellendus earum corrupti fugiat molestias! Beatae voluptatum, amet hic explicabo libero rerum repudiandae.</p>
+                    <img id="img" src="https://astanait.edu.kz/wp-content/uploads/2020/05/aitu-logo-2.png" alt="">
+                </div>
+                <div class="btns">
+                    <input class="btn" type="button" value="Change bg-color" onclick="bg()">
+                    <input class="btn" type="button" value="Change text" onclick="text()">
+                    <input class="btn" type="button" value="Change image" onclick="img()">
+                </div>
+            </div>
+            <div class="todo">
+                <h3>Task 2: To-Do list</h3>
+                <div class="mah">
+                    <input class="todoinput" id="inputField" type="text">
+                    <button class="todobutton" id="addToDo" onclick="ToDo()">+</button>
+                </div>
+                    <div class="txtbox" id="toDoContainer"></div>
+
+            </div>
+            <div class="sort">
+                <h3>Task 3: Sorting</h3>
+                <input class="sorttxt" type="text" id="arr">
+                <div class="btns">
+                    <input class="btn" type="button" value="ASC sort" onclick="ascsort()">
+                    <input class="btn" type="button" value="DESC sort" onclick="descsort()">
+                </div>
+                <p>Sorted list: </p>
+                <p id="resultsrt"></p>
+            </div>
+            <div class="calc">
+                <h3>Task 4: Calculator</h3>
+                <input class="inp" placeholder="1st Number" id="frst" type="text">
+                <input class="inp" placeholder="2nd Number" id="scnd" type="text">
+                <div class="calcbtns">
+                    <input id="mult" type="button" value="Multiply *" onclick="multiply()">
+                    <input id="div" type="button" value="Divide /" onclick="divide()">
+                    <input id="plus" type="button" value="Plus +" onclick="plus()">
+                    <input id="minus" type="button" value="Minus -" onclick="minus()">
+                </div>
+                <p>The Result Is:</p>
+                <p id="result"></p>
+            </div>
+            <div class="tax">
+                <h2>Task 5: Tax calculator</h2>
+                <input placeholder="Cost of the car" class="inp" type="text" id="inptax" style="width: 200px;">
+                <input class="btn" type="button" value="Calculate" onclick="tax()">
+                <p>You should pay: </p>
+                <p id="resulttax"></p>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
